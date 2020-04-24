@@ -15,9 +15,9 @@ Topic
 
 ### Credit
 
-https://indigotree.co.uk/automatic-dependency-injection-with-phps-reflection-api/
-https://medium.com/tech-tajawal/dependency-injection-di-container-in-php-a7e5d309ccc6 
-https://www.php.net/manual/en/class.reflectionclass.php
-https://symfony.com/doc/current/service_container.html
-http://php-di.org/
-https://gist.github.com/MustafaMagdi/2bb27aebf6ab078b1f3e5635c0282fac
+- https://indigotree.co.uk/automatic-dependency-injection-with-phps-reflection-api/
+- https://medium.com/tech-tajawal/dependency-injection-di-container-in-php-a7e5d309ccc6 
+- https://www.php.net/manual/en/class.reflectionclass.php
+- https://symfony.com/doc/current/service_container.html
+- http://php-di.org/
+- https://gist.github.com/MustafaMagdi/2bb27aebf6ab078b1f3e5635c0282fac
