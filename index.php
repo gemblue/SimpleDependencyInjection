@@ -33,3 +33,9 @@ class DB {
         echo "{$sql} <br/>";
     }
 }
+
+class Config {
+    public function __construct(Env $env, Model $model) {
+        echo 'Config DB is ready ..<br/>';
+    }
+}
