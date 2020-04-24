@@ -59,3 +59,8 @@ class Cache {
     }
 
 }
+
+$container = new Container;
+
+$user = $container->resolve('User'); 
+$user->register('Oriza');
