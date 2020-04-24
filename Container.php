@@ -27,4 +27,35 @@ class Container {
 
         return $reflector->newInstanceArgs($args); 
     }
+
+    /**
+     * Find the dependencies, if class then resolve.
+     * Run resolve recursively.
+     *
+     * @return object
+     */
+    public function getDependencies($parameters)
+    {
+        $args = [];
+
+        foreach ($parameters as $parameter) 
+        {
+            // Get class from param.
+            $isClass = $parameter->getClass();
+            
+            // Is param a class?
+            if ($isClass) {
+                // Yes, resolve param class, create instance, call resolve.
+                $type = $parameter->name;
+
+                // Assign to args, resolve.
+                $args[] = $this->resolve($type); // Recursively.
+            } else {
+                // Just assign default value.
+                $args[] = $parameter->getDefaultValue();
+            }
+        }
+
+        return $args;
+    }
 }
