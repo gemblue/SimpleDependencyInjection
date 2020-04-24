@@ -39,3 +39,23 @@ class Config {
         echo 'Config DB is ready ..<br/>';
     }
 }
+
+class Model {
+    public function __construct() {
+        echo 'Model is ready <br/>';
+    }
+}
+
+class Env {
+    public function __construct() {
+        echo 'Env is ready ..<br/>';
+    }
+}
+
+class Cache {
+    
+    public function __construct() {
+        echo 'Cache is ready .. <br/>';
+    }
+
+}
