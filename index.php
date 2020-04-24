@@ -22,3 +22,14 @@ class User {
         $this->db->execute("INSERT INTO user SET name={$name}");
     }
 }
+
+class DB {
+    
+    public function __construct(Config $config) {
+        
+    }
+    
+    public function execute($sql) {
+        echo "{$sql} <br/>";
+    }
+}
