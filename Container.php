@@ -32,7 +32,7 @@ class Container {
      * Find the dependencies, if class then resolve.
      * Run resolve recursively.
      *
-     * @return object
+     * @return array
      */
     public function getDependencies($parameters)
     {
